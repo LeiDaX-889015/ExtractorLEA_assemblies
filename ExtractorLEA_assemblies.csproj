@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97BD6815-9D87-43F5-BD8E-E18A84460F5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExtractorLEA_assemblies</RootNamespace>
+    <AssemblyName>ExtractorLEA_assemblies</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.App, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.App.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.CRUD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.CRUD.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.CSharpizer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.CSharpizer.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.CSharpizer.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.CSharpizer.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Data.CRUD.SQL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Data.CRUD.SQL.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Data.CRUD.SQL.DataTypes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Data.CRUD.SQL.DataTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Data.CRUD.SQL.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Data.CRUD.SQL.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Data.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Data.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Data.MG, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Data.MG.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Data.SQL.UDDT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Data.SQL.UDDT.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.DBMaint, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.DBMaint.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.DBMaint.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.DBMaint.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.FullTrust, Version=1.0.0.0, Culture=neutral, PublicKeyToken=24b5823953fd7bdf, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.FullTrust.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.FullTrustModule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.FullTrustModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.IDM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.IDM.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.IDM.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.IDM.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.IDMVB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.IDMVB.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Logger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.MG, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.MG.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Module, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.QCS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.QCS.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.QCS.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.QCS.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Serializer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Serializer.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.Service.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.Service.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.SiteOnBoarding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.SiteOnBoarding.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.SiteOnBoarding.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.SiteOnBoarding.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.SiteOnBoardingVb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.SiteOnBoardingVb.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.T2VProcessor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.T2VProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="CSI.T2VProcessor.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\CSI.T2VProcessor.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Customer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Customer.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Document, Version=33.0.0.1483, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\GemBox.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.9.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="ICP.Standard, Version=2022.8.0.0, Culture=neutral, PublicKeyToken=d12514102a72e9e9, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\ICP.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="IDOBase, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\IDOBase.dll</HintPath>
+    </Reference>
+    <Reference Include="IDOCore, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\IDOCore.dll</HintPath>
+    </Reference>
+    <Reference Include="IDOProtocol, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\IDOProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="IDORequestClient, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\IDORequestClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Infor.IPF.Metrics, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Infor.IPF.Metrics.dll</HintPath>
+    </Reference>
+    <Reference Include="Infor.IPF.Metrics.NLogFlatXMLWriter, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Infor.IPF.Metrics.NLogFlatXMLWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Infor.IPF.TimeProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Infor.IPF.TimeProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="InforGemBox, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\InforGemBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MGCoreExtSafe, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\MGCoreExtSafe.dll</HintPath>
+    </Reference>
+    <Reference Include="MGShared, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\MGShared.dll</HintPath>
+    </Reference>
+    <Reference Include="MGSharedResources, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\MGSharedResources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WSEnums, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\WSEnums.dll</HintPath>
+    </Reference>
+    <Reference Include="WSFormServerProtocol, Version=7.1.0.0, Culture=neutral, PublicKeyToken=87d3698afe01ef37, processorArchitecture=MSIL">
+      <HintPath>packages\CIM_SDK_CSI_Cloud.2024.1.1.3\lib\net472\WSFormServerProtocol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts.cs" />
+    <Compile Include="Helprs\ConexionBD.cs" />
+    <Compile Include="Interface\iTrialBalance.cs" />
+    <Compile Include="Metodos\ChartAccounts.cs" />
+    <Compile Include="Metodos\TrialBalance.cs" />
+    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\Cuenta.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
